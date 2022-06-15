@@ -8,6 +8,7 @@ void cekAntrean(queue<string> qu){
 	queue<string> q = qu;
 	system("cls");
 	cout<<"Daftar antrean saat ini :"<<endl;
+	cout<<"========================="<<endl;
 	if(!q.empty()){
 	while(!q.empty()){
 		cout<<">> ["<<q.front()<<"]"<<"\n";
