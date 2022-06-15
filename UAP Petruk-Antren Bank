@@ -30,7 +30,8 @@ int main(){
 	queue<string> q;
 	string opsi[] = {"Menabung Uang","Menarik Uang"};
 	int arrSize = sizeof(opsi)/sizeof(opsi[0]);
-do{
+	
+	do{
 	system("cls");
 	cout<<"1. Masuk Antrean"<<endl;
 	cout<<"2. Panggil Antrean"<<endl;
@@ -83,8 +84,8 @@ do{
 		case 3:
     	cekAntrean(q);
 		break;
+		}
 	}
-}
 	while(pilihan !=4);
 }
 
