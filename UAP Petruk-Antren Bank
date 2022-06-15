@@ -17,7 +17,7 @@ void cekAntrean(queue<string> qu){
 	}getch();
 	}else{
 		system("cls");
-		cout<<"Antrean saat ini kosong";
+		cout<<"======Antrean saat ini kosong======";
 		getch();
 	}
 	
@@ -59,33 +59,39 @@ int main(){
 			getch();
 			break;
 		case 2:
-			system("cls");
+						system("cls");
 			if(!q.empty()){
-			cout<<"Pilih Opsi: "<<endl;
+			cout<<"      Pilih Opsi:       "<<endl;
+			cout<<"========================="<<endl;
 			for(int i = 0; i<arrSize; i++)
-				cout<<i+1<<". "<<opsi[i]<<endl;
-			cout<<endl;
+				cout<<"|"<<i+1<<". "<<opsi[i]<<"\t|"<<endl;
+			cout<<"========================="<<endl;
 			
-			cout<<"Silahkan customer dengan nomor antrean "<<q.front()<<" memilih opsi\n";
+			cout<<">>Silahkan customer dengan nomor antrean "<<q.front()<<" memilih opsi\n";
 			cout<<"Pilih : ";	
 			cin>>pilihOpsi;
 			
 			system("cls");
 			if(pilihOpsi==1){
-				cout<<"Masukkan nominal uang yang ingin ditabungan : Rp. ";
+				cout<<">>Masukkan nominal uang yang ingin ditabungan : Rp. ";
 				cin>>tabung;
-				cout<<"Uang senilai Rp. "<<tabung<<" berhasil ditabung";
+				cout<<endl;
+				cout<<"========================================="<<endl;
+				cout<<"| Uang senilai Rp. "<<tabung<<" berhasil ditabung |"<<endl;
+				cout<<"=========================================";
 			}if(pilihOpsi==2){
-				cout<<"Masukkan nominal uang yang ingin ditarik : Rp. ";
+				cout<<">>Masukkan nominal uang yang ingin ditarik : Rp. ";
 				cin>>tarik;
-				cout<<"Uang senilai Rp. "<<tarik<<" berhasil ditarik";
+				cout<<"========================================"<<endl;
+				cout<<"| Uang senilai Rp. "<<tarik<<" berhasil ditarik |"<<endl;
+				cout<<"========================================";
 			}
 			
 			q.pop();
 			getch();
 			system("cls");
 			}else{
-				cout<<"Antrian saat ini kosong";
+				cout<<"======Antrian saat ini kosong======";
 				getch();
 			}
 			break;
