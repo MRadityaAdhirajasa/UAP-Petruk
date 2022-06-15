@@ -76,7 +76,7 @@ do{
 			getch();
 			system("cls");
 			}else{
-				cout<<"Antrian kosong!\n";
+				cout<<"Antrian saat ini kosong";
 				getch();
 			}
 			break;
