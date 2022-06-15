@@ -33,20 +33,27 @@ int main(){
 	
 	do{
 	system("cls");
-	cout<<"1. Masuk Antrean"<<endl;
-	cout<<"2. Panggil Antrean"<<endl;
-	cout<<"3. Cek Antrean"<<endl;
-	cout<<"4. Exit"<<endl;
+	cout<<"\t  MENU \t"<<endl;
+	cout<<"========================="<<endl;
+	cout<<"|1. Masuk Antrean\t|"<<endl;
+	cout<<"|2. Panggil Antrean\t|"<<endl;
+	cout<<"|3. Cek Antrean \t|"<<endl;
+	cout<<"|4. Exit\t\t|"<<endl;
+	cout<<"========================="<<endl;
 	cout<<"\nMasukkan Pilihan : ";
 	cin>>pilihan;
 
 	switch(pilihan){
 		case 1:
-			cout<<"\nMasukkan Nomor Antrean : ";
+			system("cls");
+			cout<<"Masukkan Nomor Antrean : ";
 			cin>>nomor;
 			q.push(nomor);
 			
-			cout<<"Nomor Antrean ["<<nomor<<"] berhasil ditambahkan";
+			cout<<endl;
+			cout<<"============================================"<<endl;
+			cout<<"<< Nomor Antrean ["<<nomor<<"] berhasil ditambahkan >>"<<endl;
+			cout<<"============================================";
 			
 			getch();
 			break;
